@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+
+    <title>Grocery Store</title>
+  </head>
+  <body>
+      <header class="p-3 bg-dark text-white container-fluid">
+        <div class="container-fluid">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <a
+              href="/"
+              class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+            ><h3>Grocery Store</h3>
+              <svg
+                class="bi me-2"
+                width="40"
+                height="32"
+                role="img"
+                aria-label="Bootstrap"
+              >
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+
+            <ul
+              class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+            >
+              <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+              <li><a href="Offers.html" class="nav-link px-2 text-white">Offers</a></li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle px-2 text-white"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Dairy & Bakery</a></li>
+                  <li><a class="dropdown-item" href="#">Vegies</a></li>
+                  <li><a class="dropdown-item" href="#">Atta,Flour & Sooji</a></li>
+                  <li><a class="dropdown-item" href="#">Dal & Pulses</a></li>
+                  <li><a class="dropdown-item" href="#">Edible Oils</a></li>
+                  <li><a class="dropdown-item" href="#">Rice & Rice Products</a></li>
+                  <li><a class="dropdown-item" href="#">Spices</a></li>
+                  <li><a class="dropdown-item" href="#">Sugar & Salt</a></li>
+                  <li><a class="dropdown-item" href="#">Sauces</a></li>
+                  <li><a class="dropdown-item" href="#">Fruit & Nuts</a></li>
+                  <li><a class="dropdown-item" href="#">Combos</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html" class="nav-link px-2 text-white">Contact Us</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-1">
+              <input
+                type="search"
+                class="form-control form-control-dark"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+            </form>
+            <button class="btn btn-outline-light me-3" type="submit">
+              <i class="bi bi-search" style="font-size: 1rem"></i></button>
+
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#LoginModal">
+                Login
+              </button>
+              <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#SignupModal">Sign-up</button>
+              <a href="checkout.html"><button type="button" class="btn btn-success">Checkout</button></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--Login Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body">
+          <h2 class="fw-bold mb-0">Login Here</h2>
+          </div>
+    
+          <div class="modal-body p-5 pt-0">
+            <form class="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Login</button>
+              <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Sign Up Modal -->
+<div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h2 class="fw-bold mb-0">Sign up if you are new</h2>
+        </div>
+  
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="Name">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Confirm Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
+            <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="container my-4">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://www.jiomart.com/images/cms/offers/1640979028_AU_mob_lp.jpg" class="offer_sub_img" alt="">
+  
+              <div class="card-body">
+                <p class="card-text">10% cashback on AU Bank Credit And Debit Card.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-muted">30 Days</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://www.jiomart.com/images/cms/offers/1642529098_mob_lp.jpg" class="offer_sub_img" alt="">
+              <div class="card-body">
+                <p class="card-text">10% cashback on HDFC Bank Credit Card.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-muted">25 Days</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://www.jiomart.com/images/cms/offers/1640979345_Dhani_mob_lp.jpg" class="offer_sub_img" alt="">
+              <div class="card-body">
+                <p class="card-text">10% cashback on Dhani OneFreedom Card.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-muted">No time limit</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://www.jiomart.com/images/cms/offers/1640979830_paytm_mob_lp.jpg" class="offer_sub_img" alt="">
+              <div class="card-body">
+                <p class="card-text">Pay using Paytm App to get upto Rs 750 Cashback.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-muted">No time limit</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://www.jiomart.com/images/cms/offers/1641754110_mob_lp.jpg" class="offer_sub_img" alt="">
+              <div class="card-body">
+                <p class="card-text">Pay using Mobikwik App to get upto Rs 750 Cashback.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-muted">60 Days</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="https://www.jiomart.com/images/cms/offers/1640979524_simpl_mob_lp.jpg" class="offer_sub_img" alt="">
+              <div class="card-body">
+                <p class="card-text">Pay via Simpl to get upto 10% Cashback.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-muted">30 Days</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2021 Grocery Store, Inc</p>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
